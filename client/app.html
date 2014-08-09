@@ -1,0 +1,45 @@
+<head>
+	<title>Twitter Feed App Thing</title>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,700' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	{{> jumbotron}}	
+</body>
+	<template name="jumbotron">
+		<div class="jumbotron col-lg-12">
+			<div class="container">
+				<h3 class="bold text-center">Did you go to the #tsmeteorhack?</h3>
+				<div class="row">
+				{{> loginButtons}}
+				</div>
+			</div>
+		</div>
+		<div class="content col-lg-12">
+			<div class="container">
+				<h3>Others who attened this event</h3>			
+				<div class="user">
+					{{#each users}}
+						{{> user}}
+					{{/each}}
+				</div>
+			</div>
+		</div>
+		<footer class="col-lg-12">
+			<h3>By <a href="mattjared.co">Matt Jared</a> at the <a href="http://twitter.com/hashtag/tsmeteorhack">#tsmeteorhack.</a> Heavily inspired by Sacha Grief <a href="http://www.smashingmagazine.com/2013/06/13/build-app-45-minutes-meteor/#show-last-Point">45 minute Meteor tutorial.</a> This took much longer than 45 minutes to create.</h3>
+		</footer>	
+	</template>
+
+	<template name="user">
+		<div class="row">
+			<a target="_blank" href="http://twitter.com/{{services.twitter.screenName}}">
+				<img src="{{services.twitter.profile_image_url}}"/> 
+				<span class="name">{{profile.name}}</span>
+			</a>
+		</div>
+		<div class="row">
+			<a class="btn btn-default" href="http://twitter.com/{{services.twitter.screenName}}">Follow {{profile.name}}</a>
+		</div>
+	</template>
+
+

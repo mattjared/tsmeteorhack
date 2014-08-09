@@ -1,0 +1,138 @@
+/* CSS declarations go here */
+
+body {
+	font-family: 'Josefin Sans', sans;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.light {
+	font-weight: 400;
+}
+
+.jumbotron {
+	border-bottom: 5px solid #34495e;
+}
+
+.jumbotron h3 {
+	font-size: 4em;
+	text-shadow: 1px 5px 1px #16A085;
+	text-transform: uppercase;
+	color: #34495e;
+}
+
+.jumbotron h4 {
+	font-size: 1.4em;
+	margin-top: 50px;
+}
+
+.sign-in-text-twitter {
+	display: block;
+	width: 25%;
+	text-align: center;
+	background-color: #34495e;
+	padding: 10px;
+	font-size: 2em;
+	color: white;
+	margin: 50px auto;
+	border-radius: 3px;
+	border-bottom: 5px solid #16A085;
+}
+
+.sign-in-text-twitter:hover {
+	cursor: pointer;
+}
+
+.login-display-name {
+	text-align: center;
+	font-size: 1.5em;
+	margin-top: 50px;
+}
+
+#login-buttons-logout {
+	color: orange;
+	margin-bottom: 50px;
+	text-decoration: underline;
+	text-align: center;
+}
+
+#login-buttons-logout:hover { 
+	cursor: pointer;
+}
+
+.content h3 {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.user {
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 2.4em;
+	background-color: #eee;
+}
+
+.user a {
+	color: #16A085;
+}
+
+.user a:hover, .user a:active, .user a:focus {
+	color: #34495e;
+}
+
+.user img {
+	margin-top: 10px;
+}
+
+.name {
+	margin-top: 10px;
+}
+
+.user .btn {
+	margin: 15px 0;
+}
+
+footer {
+	background-color: #34495e;
+	color: #eee;
+	padding: 25px 0;
+	margin-top: 200px;
+}
+
+footer h3 {
+	font-size: 1.1em;
+	text-align: center;
+}
+
+footer a {
+	color: #16A085;
+}
+
+footer a:hover, footer a:active, footer a:focus {
+	color: #eee
+}
+
+@media (max-width: 480px) { 
+	.jumbotron h3 {
+		font-size: 1.7em;
+		text-shadow: 1px 2px 1px #16A085;
+	}
+
+	.sign-in-text-twitter {
+		width: 100%;
+		font-size: 1.6em;
+		margin: 20px auto;
+	}
+
+	.content h3 {
+		font-size: 1.4em;
+	}
+
+	.user {
+		width: 100%;
+	}
+}
